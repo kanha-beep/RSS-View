@@ -1,0 +1,72 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Noto Serif Devanagari", "Georgia", "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body), sans-serif;
+  color: #2f241c;
+  background: #fff8ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  transition: 180ms ease;
+}
+
+.india-map path {
+  transition: fill 180ms ease, opacity 180ms ease;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-body), sans-serif;
+}
+
+.shakha-marker {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.shakha-marker .marker-core {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f37d0c;
+  border: 3px solid #fff7ed;
+}
+
+.shakha-marker-active {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+}
+
+.shakha-marker-active .marker-core {
+  width: 20px;
+  height: 20px;
+  background: #8f390d;
+  border: 3px solid #fff7ed;
+}
