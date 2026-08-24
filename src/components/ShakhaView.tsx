@@ -1,7 +1,7 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
-import { Overview } from "@/components/Overview";
 import { Sidebar } from "@/components/Sidebar";
 import { TopNavbar } from "@/components/TopNavbar";
 import type { Shakha } from "@/data/shakhas";
@@ -9,6 +9,22 @@ import type { Shakha } from "@/data/shakhas";
 type ShakhaViewProps = {
   shakhas: Shakha[];
 };
+
+const Overview = dynamic(
+  () => import("@/components/Overview").then((module) => module.Overview),
+  {
+    ssr: false,
+    loading: () => (
+      <section className="px-6 py-6 lg:px-10 lg:py-8">
+        <div className="rounded-[28px] border border-bhagwa-100 bg-[#fffaf2] p-6">
+          <div className="flex h-[520px] items-center justify-center rounded-[24px] border border-bhagwa-200 bg-white text-sm font-semibold text-ink/60">
+            Loading map...
+          </div>
+        </div>
+      </section>
+    )
+  }
+);
 
 export function ShakhaView({ shakhas }: ShakhaViewProps) {
   const [selectedState, setSelectedState] = useState("All India");
