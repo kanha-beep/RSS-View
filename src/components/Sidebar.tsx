@@ -6,7 +6,11 @@ type SidebarProps = {
   onViewChange: (view: "overview" | "all-checkpoints") => void;
 };
 
-const links = [
+type SidebarLink =
+  | { label: string; view: "overview" | "all-checkpoints" }
+  | { label: string };
+
+const links: SidebarLink[] = [
   { label: "Overview", view: "overview" as const },
   {
     label: "All Checkpoints",
@@ -36,7 +40,7 @@ export function Sidebar({
             key={link.label}
             type="button"
             onClick={() => {
-              if ("view" in link) {
+              if ("view" in link && link.view) {
                 onViewChange(link.view);
               }
             }}
