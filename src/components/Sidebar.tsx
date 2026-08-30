@@ -52,7 +52,7 @@ export function Sidebar({
             }`}
           >
             <span>{link.label}</span>
-            <span className="text-xs opacity-70">0{index + 1}</span>
+            {/* <span className="text-xs opacity-70">0{index + 1}</span> */}
           </button>
         ))}
       </div>
