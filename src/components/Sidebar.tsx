@@ -16,10 +16,10 @@ const links: SidebarLink[] = [
     label: "All Checkpoints",
     view: "all-checkpoints" as const
   },
-  { label: "States" },
-  { label: "Find Shakha" },
-  { label: "Volunteers" },
-  { label: "Reports" }
+  // { label: "States" },
+  // { label: "Find Shakha" },
+  // { label: "Volunteers" },
+  // { label: "Reports" }
 ];
 
 export function Sidebar({
