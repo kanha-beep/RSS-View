@@ -88,12 +88,12 @@ export function TopNavbar({
                 </button>
               ))}
             </div>
-            <div className="mt-4 rounded-2xl border border-bhagwa-200 bg-bhagwa-50 p-4">
+            <div className="mt-2 rounded-2xl border border-bhagwa-200 bg-bhagwa-50 p-3">
               <p className="text-sm font-semibold text-bhagwa-900">States</p>
               <select
                 value={selectedState}
                 onChange={(event) => onStateChange(event.target.value)}
-                className="mt-3 w-full rounded-xl border border-bhagwa-200 bg-white px-3 py-3 text-sm font-semibold text-ink outline-none"
+                className="mt-3 w-full rounded-xl border border-bhagwa-200 bg-white p-3 text-sm font-semibold text-ink outline-none"
               >
                 <option value="All India">All India</option>
                 {states.map((state) => (
