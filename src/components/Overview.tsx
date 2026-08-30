@@ -46,7 +46,7 @@ export function Overview({
       <div className="grid gap-8 border-b border-bhagwa-100 p-5 lg:grid-cols-[1.25fr_0.75fr] lg:px-10">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.32em] text-bhagwa-700">
-            Rashtriya Swayamsevak Sangh
+            Rashtriya Swayamsevak Sangh (RSS)
           </p>
           {/* <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-heading)] text-4xl leading-tight text-bhagwa-900 sm:text-5xl">
             Explore shakha locations across India with a live map, zoom, and
