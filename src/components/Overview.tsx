@@ -107,22 +107,24 @@ export function Overview({
                       <p className="font-semibold text-bhagwa-900">
                         {shakha.name}
                       </p>
+                        <p className="mt-2 text-sm">
+                        <strong>Mukhya Shikshak:</strong> {shakha.mukhyaShikshak}
+                      </p>
+                       <p className="text-sm">
+                        <strong>Number of People:</strong> {shakha.numberOfPeople}
+                      </p>
                       <p className="mt-1 text-sm text-slate-700">
                         <strong>Location: </strong>{shakha.location}
                       </p>
                       <p className="mt-1 text-sm text-slate-700">
-                        <strong>City: </strong>{shakha.city}, <strong>State: </strong>{shakha.state}
+                        <strong>City: </strong>{shakha.city}
                       </p>
-                      <p className="mt-2 text-sm">
-                        <strong>Mukhya Shikshak:</strong> {shakha.mukhyaShikshak}
-                      </p>
-                      <p className="text-sm">
+                    
+                      {/* <p className="text-sm">
                         <strong>Coordinates:</strong> {shakha.coordinates.lat},{" "}
                         {shakha.coordinates.lng}
-                      </p>
-                      <p className="text-sm">
-                        <strong>Number of People:</strong> {shakha.numberOfPeople}
-                      </p>
+                      </p> */}
+                     
                     </div>
                   </Popup>
                 </Marker>
