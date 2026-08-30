@@ -48,10 +48,10 @@ export function Overview({
           <p className="text-sm font-semibold uppercase tracking-[0.32em] text-bhagwa-700">
             Rashtriya Swayamsevak Sangh
           </p>
-          <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-heading)] text-4xl leading-tight text-bhagwa-900 sm:text-5xl">
+          {/* <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-heading)] text-4xl leading-tight text-bhagwa-900 sm:text-5xl">
             Explore shakha locations across India with a live map, zoom, and
             state-level filtering.
-          </h1>
+          </h1> */}
           <div className="mt-8 flex flex-wrap gap-4">
             <div className="rounded-2xl border border-bhagwa-200 bg-bhagwa-50 px-5 py-4">
               <p className="text-sm text-ink/60">Visible checkpoints</p>
@@ -60,8 +60,7 @@ export function Overview({
               </p>
             </div>
           </div>
-        </div>
-        <div className="flex items-start justify-end">
+           <div className="flex items-start justify-end">
           <div className="rounded-2xl border border-bhagwa-200 bg-white px-5 py-4">
             <p className="text-sm text-ink/60">Selected region</p>
             <p className="mt-1 text-2xl font-extrabold text-bhagwa-800">
@@ -69,6 +68,8 @@ export function Overview({
             </p>
           </div>
         </div>
+        </div>
+       
       </div>
       <section className="px-6 py-6 lg:px-10 lg:py-8">
         <div className="rounded-[28px] border border-bhagwa-100 bg-[#fffaf2] p-4 sm:p-6">
