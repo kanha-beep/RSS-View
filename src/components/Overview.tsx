@@ -108,10 +108,10 @@ export function Overview({
                         {shakha.name}
                       </p>
                       <p className="mt-1 text-sm text-slate-700">
-                        {shakha.location}
+                        <strong>Location: </strong>{shakha.location}
                       </p>
                       <p className="mt-1 text-sm text-slate-700">
-                        {shakha.city}, {shakha.state}
+                        <strong>City: </strong>{shakha.city}, <strong>State: </strong>{shakha.state}
                       </p>
                       <p className="mt-2 text-sm">
                         <strong>Mukhya Shikshak:</strong> {shakha.mukhyaShikshak}
